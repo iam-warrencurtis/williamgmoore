@@ -3,23 +3,30 @@
 
 body {
   background: #fff;
-  text-align: center;
+  text-align: left;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1em;
+  font-size: 1.4em;
+
 }
 
-#nav li {
-  list-style: none;
+
+#nav {
   float: right;
-  margin-top: 20px;
+  li {
+    list-style: none;
+    float: left;
+    margin-top: 20px;
 
-  a {
-    margin-right: 20px;
-    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1.5em;
-    color: #fff;
-    text-decoration: none;
-
+    a {
+      margin-right: 20px;
+      font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 1.2em;
+      color: #fff;
+      text-decoration: none;
+      &:hover {
+        color: #ccc;
+      }
+    }
   }
 }
 
@@ -42,12 +49,13 @@ body {
 
 #home-copy {
   text-align: left;
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 #footer {
   background-color: #0A4453;
-  min-height: 400px;
+  min-height: 200px;
   color: #fff;
   padding-top: 20px;
 
@@ -63,4 +71,87 @@ ul {
   line-height: 15px;
   text-align: left;
 }
+}
+
+#areas {
+  list-style: none;
+}
+
+.criminallaw {
+  ul {
+  list-style: none;
+  }
+}
+
+.criminallaw {
+  height: 100%;
+  min-height: 600px;
+}
+
+.civillit, .personalinjury, .bankruptcy, .businesslaw {
+  display: none;
+  height: 100%;
+  min-height: 600px;
+   ul {
+    list-style: none;
+  }
+}
+
+#social {
+  a {
+    color: #fff;
+    font-size: 35px;
+    margin-right: 5px;
+  }
+}
+
+#home-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#contact-info {
+  float: left;
+  margin-left: 20px;
+  padding-top: 5px;
+}
+
+#wm-logo-footer {
+  float: left;
+  display: block;
+}
+
+#william-moore {
+  padding-top: 20px;
+}
+
+#areas {
+  padding-top: 20px;
+  
+
+a {
+  text-decoration: none;
+  color: #ccc;
+  &:hover {
+  color: #666;
+  }
+
+}
+  
+}
+
+.active {
+    color: #666 !important;
+  }
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+  
 }
